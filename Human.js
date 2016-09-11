@@ -12,6 +12,18 @@ class Human {
     }
 }
 
+class Person extends Human{
+    constructor(name, age){
+        super.constructor(name);
+        this.age = age;
+    }
+
+    toString(){
+        return (super.toString()+ " I am Person and I am "+ this.age +" years old");
+    }
+}
 
 //var me = new Human("Gali");
 //me.toString()
+
+//var gali = new Person("Gali", 13);
